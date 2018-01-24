@@ -1,0 +1,26 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section__title">name :</view>
+    <input name="userName" value="{{userName}}" placeholder="please input your name" bindchange="nameChange" />
+  </view>
+  <view class="section">
+    <view class="section__title">Mobile Number :</view>
+    <input name="mobileNumber" placeholder="please input your Mobile Number" value="{{mobileNumber}}" bindchange="mobileNumberChange" />
+  </view>
+  <view class="section">
+    <view class="section__title">Email :</view>
+    <input name="email" placeholder="please input your Email" value="{{email}}" bindchange="emailChange" />
+  </view>
+  <view class="section">
+  <view class="section__title">Birthdate :</view>
+  <picker mode="date" value="{{birthdate}}" start="1928-01-01" end="2018-12-31" bindchange="birthdateChange">
+    <view class="picker">
+      Click to choose: {{birthdate}}
+    </view>
+  </picker>
+  </view>
+  <view class="btn-area" style='margin-top:30px;'>
+    <button type='primary' formType="submit" style='margin-top:10px;'>Submit</button>
+    <button type='warn' formType="reset" style='margin-top:10px;'>Reset</button>
+  </view>
+</form>

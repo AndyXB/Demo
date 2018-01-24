@@ -1,0 +1,17 @@
+/* pages/infoSubmit/infoSubmit.wxss */
+
+.section {
+  padding: 8px
+}
+
+.section__title {
+  font-size: 20px;
+  font-weight: bold
+}
+
+input {
+  height: 30px;
+  border: 1px solid green;
+  border-radius: 5px;
+  margin-top: 5px
+}
